@@ -1,0 +1,82 @@
+.flashcard-container {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+
+}
+
+.flashcard-container .card-wrapper {
+    position: relative;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transform-style: preserve-3d;
+    background: #fff;
+    transform: perspective(1000px) rotateY(var(--rotate-y, 0)) translateY(var(--translate-y, 0));
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.flashcard-container .card-wrapper:hover {
+    box-shadow: 0 0 9px 3px rgba(0, 0, 0, 0.3);
+    --translate-y: -2px;
+}
+
+.flashcard-container .card-wrapper.flip {
+    --rotate-y: 180deg;
+}
+
+
+
+.flashcard-container .card-wrapper .front-section,
+.flashcard-container .card-wrapper .back-section {
+    position: absolute;
+    padding: .6rem;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.flashcard-container .card-wrapper .front-section {
+    left: 0;
+    top: 0;
+}
+
+.flashcard-container .card-wrapper .back-section {
+    transform: rotateY(180deg);
+    text-align: center;
+}
+
+/* OPTIONS */
+.flashcard-container .card-wrapper .options-wrapper {
+    width: 100%;
+    margin-top: .5rem;
+    padding-top: .5rem;
+    border-top: 1px solid #999;
+    color: #666;
+}
+
+.flashcard-container .card-wrapper .options-wrapper .option-text {
+    margin-top: .5rem;
+}
+
+.flashcard-container .card-wrapper .options-wrapper .option-text:first-child {
+    margin-top: 0;
+}
+
+
+
+.header-container .header-form .form-group .generate-btn {
+    padding: .3rem .5rem;
+    background: #88fffd;
+    border-radius: 5px;
+    border: 1px solid #444;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.header-container .header-form .form-group .generate-btn:hover {
+    background: #79efed;
+}

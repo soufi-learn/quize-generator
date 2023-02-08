@@ -1,0 +1,59 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "question": "What is 2 + 2 ?",
+            "answer": 22,
+            "options": [
+                322,
+                5433,
+                22,
+                78
+            ]
+        },
+        {
+            "id": 2,
+            "question": "Who Is Your Love ?",
+            "answer": "Tahsin",
+            "options": [
+                "Gholam",
+                "Jafar",
+                "Zahra",
+                "Tahsin"
+            ]
+        },
+        {
+            "id": 5,
+            "question": "Do You Want Me To Be Your Mother ?",
+            "answer": "Non Of Your Business",
+            "options": [
+                "Amasing!",
+                "Not at All",
+                "Yep! Yep!",
+                "Non Of Your Business"
+            ]
+        },
+        {
+            "id": 3,
+            "question": "Where Do You Live ?",
+            "answer": "Florida",
+            "options": [
+                "Shiraz",
+                "Esfahan",
+                "Tehran",
+                "Florida"
+            ]
+        },
+        {
+            "id": 6,
+            "question": "Do You Love Me ?",
+            "answer": "Ofcourse",
+            "options": [
+                "A Lot",
+                "Yep Baby",
+                "Why Not?",
+                "Ofcourse"
+            ]
+        }
+    ]
+}

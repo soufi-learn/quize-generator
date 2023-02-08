@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: vazir;
+}
+
+body {
+    background: #f4ffff;
+}
+
+ul {
+    padding-left: 0;
+}
+
+input,
+button,
+select,
+textarea {
+    font-family: vazir;
+    outline: none;
+}
+
+.loading-text {
+    text-align: center;
+    margin-top: 2rem;
+}
